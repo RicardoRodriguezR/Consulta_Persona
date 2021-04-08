@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/btnCargos"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="Cargos"
+        android:textSize="25px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnSalarios"
+        app:layout_constraintTop_toBottomOf="@+id/btnGuardar" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -31,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="50dp"
         android:text="Nombre"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -41,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:text="Apellido"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
@@ -84,7 +97,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:text="Edad"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtApellido" />
@@ -104,7 +117,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="138dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:text="Salario"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/txtApellido" />
@@ -126,7 +139,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:text="Cargo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -138,7 +151,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="10dp"
         android:text="Email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.153"
@@ -147,43 +160,58 @@
 
     <Button
         android:id="@+id/btnGuardar"
-        android:layout_width="100dp"
+        android:layout_width="90dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="20dp"
-        android:text="Guardar"
+        android:layout_marginTop="10dp"
+        android:text="send"
+        android:textSize="25px"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
 
     <TextView
         android:id="@+id/txtMessage"
         android:layout_width="300dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="12dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMayor" />
+
+
+    <Button
+        android:id="@+id/btnMenor"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="4dp"
+        android:text="menor"
+        android:textSize="25px"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnGuardar" />
 
     <Button
-        android:id="@+id/btnConsultas"
-        android:layout_width="100dp"
+        android:id="@+id/btnSalarios"
+        android:layout_width="83dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Consultas"
-        app:layout_constraintStart_toEndOf="@+id/btnGuardar"
-        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="Salarios"
 
+        android:textSize="25px"
+        app:layout_constraintStart_toEndOf="@+id/btnMayor"
+        app:layout_constraintTop_toBottomOf="@+id/btnGuardar" />
 
     <Button
-        android:id="@+id/btnMostrarLista"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnMayor"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.129"
-        app:layout_constraintStart_toEndOf="@+id/btnConsultas"
-        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="mayor"
+        android:textSize="25px"
+        app:layout_constraintStart_toEndOf="@+id/btnMenor"
+        app:layout_constraintTop_toBottomOf="@+id/btnGuardar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

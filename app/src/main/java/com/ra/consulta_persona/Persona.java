@@ -5,14 +5,14 @@ import android.widget.EditText;
 
 public class Persona {
 
-    EditText Nombre;
-    EditText Apellido;
-    EditText Edad;
-    EditText Salario;
-    EditText Cargo;
-    EditText Email;
+    String Nombre;
+    String Apellido;
+    Integer Edad;
+    Integer Salario;
+    String Cargo;
+    String Email;
 
-    public Persona(EditText nombre, EditText apellido, EditText edad, EditText salario, EditText cargo, EditText email) {
+    public Persona(String nombre, String apellido, Integer edad, Integer salario, String cargo, String email) {
         Nombre = nombre;
         Apellido = apellido;
         Edad =  edad;
@@ -21,61 +21,59 @@ public class Persona {
         Email = email;
     }
 
-    public EditText  getNombre() {
+    public String getNombre() {
         return Nombre;
     }
 
-    public void setNombre(EditText nombre) {
+    public void setNombre(String nombre) {
         Nombre = nombre;
     }
 
-    public EditText getApellido() {
+    public String getApellido() {
         return Apellido;
     }
 
-    public void setApellido(EditText apellido) {
+    public void setApellido(String apellido) {
         Apellido = apellido;
     }
 
-    public EditText getEdad() {
+    public Integer getEdad() {
         return Edad;
     }
 
-    public void setEdad(EditText edad) {
+    public void setEdad(Integer edad) {
         Edad = edad;
     }
 
-    public EditText getSalario() {
+    public Integer getSalario() {
         return Salario;
     }
 
-    public void setSalario(EditText salario) {
+    public void setSalario(Integer salario) {
         Salario = salario;
     }
 
-    public EditText getCargo() {
+    public String getCargo() {
         return Cargo;
     }
 
-    public void setCargo(EditText cargo) {
+    public void setCargo(String cargo) {
         Cargo = cargo;
     }
 
-    public EditText getEmail() {
+    public String getEmail() {
         return Email;
     }
 
-    public void setEmail(EditText email) {
+    public void setEmail(String email) {
         Email = email;
     }
 
     @Override
     public String toString() {
-        return  "Nombre: " + Nombre.getText().toString() +"\n"+
-                "Apellido: " + Apellido.getText().toString() +"\n"+
-                "Edad: " + Edad.getText().toString() +"\n" +
-                "Salario: " + Salario.getText().toString() +"\n"+
-                "Cargo: " + Cargo.getText().toString() +"\n"+
-                "Email: " + Email.getText().toString();
+        return  "Nombre: " + Nombre +" "+Apellido +"\n"+
+                "Edad: " + Edad +" Salario: "+ Salario +"\n"+
+                "Cargo: " + Cargo +"\n"+
+                "Email: " + Email;
     }
 }

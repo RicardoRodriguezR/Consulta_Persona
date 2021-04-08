@@ -19,15 +19,6 @@ public class Consultas extends AppCompatActivity implements View.OnClickListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_consultas);
 
-        btnMasJoven = findViewById(R.id.btnMasJoven);
-        btnMasViejo = findViewById(R.id.btnMasViejo);
-        btnSalarios = findViewById(R.id.btnSalarios);
-        btnCargos= findViewById(R.id.btnCargos);
-
-        btnMasJoven.setOnClickListener(this);
-        btnMasViejo.setOnClickListener(this);
-        btnSalarios.setOnClickListener(this);
-        btnCargos.setOnClickListener(this);
          getActivity();
     }
         public void getActivity(){
